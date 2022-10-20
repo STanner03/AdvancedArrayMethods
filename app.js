@@ -283,7 +283,15 @@ console.log("7) Dishes with chickpea in the ingredients are", ingredientIn)
 //8a. Create a function that will return an array of the string cuisine types. Ie, ["Italian", "Italian", "Mexican", ...]
 //Map
 
-
+function map(array) {
+    const newCuisineArray = [];
+    for (let item of array) {
+        newCuisineArray.push(item.cuisine)
+    }
+    return newCuisineArray;
+}
+let cuisineArray = map(dishes)
+console.log("8a) The cuisine types are", cuisineArray)
 
 //9. Create a function that will return an array of strings, with the cuisine type appended to the start of the dish's name. Ie, ["Italian Pizza", "Italian Spaghetti", ...]
 //Map 
