@@ -296,11 +296,21 @@ console.log("8a) The cuisine types are", cuisineArray)
 //9. Create a function that will return an array of strings, with the cuisine type appended to the start of the dish's name. Ie, ["Italian Pizza", "Italian Spaghetti", ...]
 //Map 
 
-
+function map(array) {
+    const newCuisineArray = [];
+    for (let item of array) {
+        newCuisineArray.push(item.cuisine + " " + item.name)
+    }
+    return newCuisineArray;
+}
+let cuisineName = map(dishes)
+console.log("9) The cuisine types added to the dish title are", cuisineName)
 
 //10. Create a function that will use advanced array methods on the 'dishes' array and return the result ["Vegetarian Lasagna", "Vegetarian Falafel", "Vegetarian Chili"]
 
-
+let vegetarianObject = problemOne();
+let dishName = map(vegetarianObject)
+console.log("10) Vegetarian dishes and their names are", dishName)
 
 
 
