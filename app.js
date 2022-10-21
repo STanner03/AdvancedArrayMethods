@@ -318,6 +318,8 @@ console.log("10) Vegetarian dishes and their names are", dishName)
 
 //8b. Use the filter method to eliminate duplicate from problem 8a.
 
+
+
 //11. Create a function that will return dishes whose ingredients array INCLUDES "tomato" OR "cheese".
 //Hint: You do not want to check the array's indexes to find out what the array INCLUDES.
 //Filter
@@ -343,5 +345,11 @@ console.log("11) Dishes with tomato or cheese in the ingredients are", tomatoChe
 
 //12. Create a function that will return the total serving count of all dishes.
 //Must use Reduce, not a loop.
+
+let sum = dishes.reduce(function(sum, el){
+    return sum += el.servings;
+    console.log(sum)
+})
+console.log(sum)
 
 //13. Create a function that will return an array of any objects that do not share a cuisine type with any other objects.
